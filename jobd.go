@@ -7,9 +7,9 @@ import (
 	"path"
 	"strings"
 
-	"code.google.com/p/go9p/p"
-	"code.google.com/p/go9p/p/srv"
 	"github.com/golang/glog"
+	p "github.com/vergult/go9p"
+	"github.com/vergult/go9p/srv"
 )
 
 // jobsroot is the root of the jobd file hierarchy
@@ -73,8 +73,6 @@ func main() {
 		glog.Errorf("listener failed to start (%v)", err)
 		os.Exit(1)
 	}
-
-	os.Exit(0)
 }
 
 // mkjobdb checks to see if the specified path to the jobd database exists and creates it

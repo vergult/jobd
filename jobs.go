@@ -1,9 +1,9 @@
 package main
 
 import (
-	"code.google.com/p/go9p/p"
-	"code.google.com/p/go9p/p/srv"
 	"github.com/golang/glog"
+	p "github.com/vergult/go9p"
+	"github.com/vergult/go9p/srv"
 )
 
 type jobsdir struct {
